@@ -4,12 +4,14 @@
 
 int main(void)
 {
-    float owed=-1;
-    while(owed<0)
+    float owed=0;
+    do
     {
         printf("Enter amount owed: ");
         owed=round(GetFloat() * 100);
-    } 
+    }
+    while(owed<0);
+    
     if (owed==0)
     {
         printf("You don't get any change silly!\n");
