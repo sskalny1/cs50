@@ -8,6 +8,10 @@ int main(void)
     {
         printf("Height: ");
         height=GetInt();
+        if (height==0)
+        {
+            break;
+        }
     }
     
     int total_height=height;
@@ -25,7 +29,7 @@ int main(void)
         {
             if (hash==1)
             {
-                printf("#\n");
+                printf("##\n");
                 hash--;
             }
             else
