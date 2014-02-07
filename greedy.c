@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -7,7 +8,7 @@ int main(void)
     while(owed<0)
     {
         printf("Enter amount owed: ");
-        owed=GetFloat()*100;
+        owed=round(GetFloat() * 100);
     } 
     if (owed==0)
     {
